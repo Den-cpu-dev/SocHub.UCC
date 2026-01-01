@@ -51,7 +51,9 @@ body {
     line-height: 1.6;
     color: var(--text-primary);
     background-color: var(--bg-primary);
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
 
 .container {
@@ -67,7 +69,9 @@ body {
     top: 0;
     z-index: 100;
     box-shadow: 0 2px 10px var(--shadow-color);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .navbar {
@@ -498,7 +502,9 @@ a:focus-visible {
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 2px 8px var(--shadow-color);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .semester h4 {
@@ -824,7 +830,9 @@ a:focus-visible {
     height: 66px;
     display: block;
     margin: 0 auto 18px auto;
-    transition: transform 0.28s ease, filter 0.28s ease;
+    transition:
+        transform 0.28s ease,
+        filter 0.28s ease;
 }
 
 .folder-icon svg .flap {
@@ -1093,7 +1101,9 @@ a:focus-visible {
     color: var(--text-primary);
     font-family: inherit;
     font-size: 1rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
 
 .contact-form input::placeholder,
@@ -1753,7 +1763,9 @@ a:focus-visible {
 
 /* Faculty Card Hover Enhancement */
 .faculty-card {
-    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    transition:
+        transform var(--transition-speed) ease,
+        box-shadow var(--transition-speed) ease;
 }
 
 .faculty-card:hover {

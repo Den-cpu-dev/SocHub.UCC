@@ -1376,7 +1376,9 @@ const facultyData = {
  * @param {HTMLElement} closeBtn - The close button element
  */
 function createModalCloser(modal, closeBtn) {
-    if (!modal) return;
+    if (!modal) {
+        return;
+    }
 
     let lastFocusedElement = null;
 
@@ -1389,7 +1391,9 @@ function createModalCloser(modal, closeBtn) {
 
     // Trap focus inside modal
     function trapFocus(e) {
-        if (modal.style.display !== "block") return;
+        if (modal.style.display !== "block") {
+            return;
+        }
 
         const focusableElements = getFocusableElements();
         const firstElement = focusableElements[0];
@@ -1470,7 +1474,7 @@ document.querySelectorAll(".course-list li").forEach((courseItem) => {
             const courseCode = codeSpan ? codeSpan.textContent.trim() : null;
 
             // Helper to populate modal fields
-            function openModal(payload) {
+            const openModal = (payload) => {
                 const code = payload.code || "";
                 const extra = careerData && careerData[code] ? careerData[code] : null;
 
@@ -1525,7 +1529,7 @@ document.querySelectorAll(".course-list li").forEach((courseItem) => {
                         }
                     }
                 }
-            }
+            };
 
             if (courseCode && courseData[courseCode]) {
                 openModal(Object.assign({ code: courseCode }, courseData[courseCode]));
@@ -1544,6 +1548,7 @@ document.querySelectorAll(".course-list li").forEach((courseItem) => {
             // If no code found or no data available, show the list item's text as the name
             openModal({ name: text });
         } catch (error) {
+            // eslint-disable-next-line no-console
             console.error("Error opening course modal:", error);
             // Show error in modal instead of alert
             if (modal) {
@@ -1574,7 +1579,9 @@ const facultyCloseBtn = facultyModal ? facultyModal.querySelector(".close") : nu
 createModalCloser(facultyModal, facultyCloseBtn);
 
 function openFacultyModal(faculty) {
-    if (!facultyModal) return;
+    if (!facultyModal) {
+        return;
+    }
 
     const modalTitle = document.getElementById("modalFacultyName");
     const modalPosition = document.getElementById("modalFacultyPosition");
@@ -1585,17 +1592,22 @@ function openFacultyModal(faculty) {
     const modalProfile = document.getElementById("modalProfileLink");
     const modalPhoto = document.getElementById("modalFacultyPhoto");
 
-    if (modalTitle) modalTitle.textContent = faculty.name || "Faculty Member";
-    if (modalPosition)
+    if (modalTitle) {
+        modalTitle.textContent = faculty.name || "Faculty Member";
+    }
+    if (modalPosition) {
         modalPosition.textContent = `${faculty.title || ""} ${
             faculty.position ? "| " + faculty.position : ""
         }`.trim();
+    }
     if (modalEmail) {
         modalEmail.innerHTML = faculty.email
             ? `<a href="mailto:${faculty.email}">${faculty.email}</a>`
             : "Email not available";
     }
-    if (modalBio) modalBio.textContent = faculty.bio || "Biography information not available.";
+    if (modalBio) {
+        modalBio.textContent = faculty.bio || "Biography information not available.";
+    }
 
     // Display faculty photo if available
     if (modalPhoto) {
@@ -1812,7 +1824,10 @@ if (contactForm) {
 
             // Sanitize inputs - remove potential XSS characters (basic client-side only)
             // NOTE: This is NOT sufficient for production - you MUST have server-side sanitization
+            // These variables are kept for future backend integration
+            // eslint-disable-next-line no-unused-vars
             const sanitizedName = name.replace(/[<>]/g, "");
+            // eslint-disable-next-line no-unused-vars
             const sanitizedMessage = message.replace(/[<>]/g, "");
 
             // Disable button and show loading state
@@ -1848,6 +1863,7 @@ if (contactForm) {
                 // .catch(error => { /* handle error */ });
             }, 500);
         } catch (error) {
+            // eslint-disable-next-line no-console
             console.error("Error submitting form:", error);
             const submitBtn = this.querySelector(".submit-btn");
             if (submitBtn) {
@@ -1864,7 +1880,7 @@ if (contactForm) {
 }
 
 // Add scroll effect to header
-window.addEventListener("scroll", function () {
+window.addEventListener("scroll", () => {
     const header = document.querySelector(".header");
     if (window.scrollY > 50) {
         header.style.boxShadow = "0 5px 20px rgba(0, 0, 0, 0.2)";
@@ -1876,7 +1892,7 @@ window.addEventListener("scroll", function () {
 // CTA Button Scroll to Programs
 const ctaBtn = document.querySelector(".cta-btn");
 if (ctaBtn) {
-    ctaBtn.addEventListener("click", function () {
+    ctaBtn.addEventListener("click", () => {
         const programsSection = document.querySelector("#programs");
         if (programsSection) {
             programsSection.scrollIntoView({
@@ -1893,7 +1909,7 @@ const observerOptions = {
     rootMargin: "0px 0px -100px 0px",
 };
 
-const observer = new IntersectionObserver(function (entries) {
+const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.style.opacity = "1";
@@ -2017,7 +2033,7 @@ document.querySelectorAll(".faculty-card").forEach((card) => {
             { passive: true }
         );
 
-        function handleSwipe() {
+        const handleSwipe = () => {
             const swipeDistance = touchEndX - touchStartX;
             if (Math.abs(swipeDistance) > minSwipeDistance) {
                 if (swipeDistance > 0) {
@@ -2029,7 +2045,7 @@ document.querySelectorAll(".faculty-card").forEach((card) => {
                 }
                 resetAutoSlide();
             }
-        }
+        };
     }
 
     // Start auto-slide
@@ -2048,15 +2064,20 @@ document.querySelectorAll(".faculty-card").forEach((card) => {
     }
 
     let currentIndex = 0;
-    const cardsPerView = getCardsPerView();
     const totalCards = scholarshipCards.length;
     let autoScrollInterval;
 
     function getCardsPerView() {
         const width = window.innerWidth;
-        if (width > 1200) return 4;
-        if (width > 900) return 3;
-        if (width > 600) return 2;
+        if (width > 1200) {
+            return 4;
+        }
+        if (width > 900) {
+            return 3;
+        }
+        if (width > 600) {
+            return 2;
+        }
         return 1;
     }
 
