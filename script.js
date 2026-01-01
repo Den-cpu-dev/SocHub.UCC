@@ -1870,5 +1870,107 @@ document.querySelectorAll(".faculty-card").forEach((card) => {
         updateButtonVisibility();
     });
 
-    updateButtonVisibility();
+    // Dark Mode Toggle
+    (function () {
+        const themeToggle = document.querySelector(".theme-toggle");
+        const sunIcon = document.querySelector(".sun-icon");
+        const moonIcon = document.querySelector(".moon-icon");
+        const html = document.documentElement;
+
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem("theme") || "light";
+        if (currentTheme === "dark") {
+            html.classList.add("dark-mode");
+            sunIcon.style.display = "none";
+            moonIcon.style.display = "block";
+        }
+
+        themeToggle.addEventListener("click", () => {
+            html.classList.toggle("dark-mode");
+            const theme = html.classList.contains("dark-mode") ? "dark" : "light";
+            localStorage.setItem("theme", theme);
+
+            // Toggle icon visibility
+            if (theme === "dark") {
+                sunIcon.style.display = "none";
+                moonIcon.style.display = "block";
+            } else {
+                sunIcon.style.display = "block";
+                moonIcon.style.display = "none";
+            }
+        });
+    })();
+
+    // Back to Top Button
+    (function () {
+        const backToTopBtn = document.querySelector(".back-to-top");
+
+        // Show/hide button based on scroll position
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add("show");
+            } else {
+                backToTopBtn.classList.remove("show");
+            }
+        });
+
+        // Smooth scroll to top
+        backToTopBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        });
+
+        // Keyboard support (Enter or Space)
+        backToTopBtn.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                });
+            }
+        });
+    })();
+
+    // Smooth Scrolling for all anchor links
+    (function () {
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+                const href = this.getAttribute("href");
+                if (href !== "#" && document.querySelector(href)) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    target.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                    });
+                }
+            });
+        });
+    })();
+
+    // Enhanced keyboard navigation
+    (function () {
+        // Close dropdown on Escape key
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") {
+                document.querySelectorAll(".dropdown.active").forEach((dropdown) => {
+                    dropdown.classList.remove("active");
+                });
+            }
+        });
+
+        // Improved keyboard navigation for focus management
+        document.querySelectorAll(".dropdown").forEach((dropdown) => {
+            dropdown.addEventListener("keydown", (e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    dropdown.classList.toggle("active");
+                }
+            });
+        });
+    })();
 })();

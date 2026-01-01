@@ -33,13 +33,17 @@
     left: 0;
     background: var(--primary-green);
     color: var(--white);
-    padding: 8px;
+    padding: 12px 20px;
     text-decoration: none;
     z-index: 1000;
+    font-weight: 600;
+    border-radius: 0 0 5px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .skip-link:focus {
     top: 0;
+    transition: top 0.3s ease;
 }
 
 body {
@@ -1774,5 +1778,246 @@ a:focus-visible {
     .faculty-modal-photo {
         width: calc(var(--modal-photo-size) * 0.8);
         height: calc(var(--modal-photo-size) * 0.8);
+    }
+}
+
+/* Dark Mode Support */
+html.dark-mode {
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #2d2d2d;
+    --bg-tertiary: #0f0f0f;
+    --text-primary: #e0e0e0;
+    --text-secondary: #f5f5f5;
+    --text-tertiary: #b0b0b0;
+    --card-bg: #2d2d2d;
+    --modal-bg: #2d2d2d;
+    --border-color: rgba(156, 204, 101, 0.2);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: transparent;
+    border: 2px solid var(--light-green);
+    border-radius: 5px;
+    padding: 6px 10px;
+    cursor: pointer;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    margin-right: 1rem;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(156, 204, 101, 0.1);
+}
+
+.theme-toggle:focus {
+    outline: 2px solid var(--accent-green);
+    outline-offset: 2px;
+}
+
+.sun-icon,
+.moon-icon {
+    stroke: currentColor;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: -100px;
+    right: 30px;
+    background: var(--light-green);
+    color: var(--white);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 99;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 0;
+}
+
+.back-to-top:hover {
+    background: var(--primary-green);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.back-to-top:focus {
+    outline: 2px solid var(--accent-green);
+    outline-offset: 2px;
+}
+
+.back-to-top.show {
+    bottom: 30px;
+}
+
+.back-to-top svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: var(--bg-tertiary);
+    color: var(--text-secondary);
+    padding: 60px 20px 30px;
+    margin-top: 80px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-section h3 {
+    color: var(--accent-green);
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.footer-section p {
+    line-height: 1.6;
+    color: var(--text-tertiary);
+    font-size: 0.95rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: var(--text-tertiary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+    color: var(--accent-green);
+    text-decoration: underline;
+    outline: none;
+}
+
+.footer-section address {
+    font-style: normal;
+}
+
+.footer-section address p {
+    margin-bottom: 8px;
+}
+
+.footer-section address a {
+    color: var(--text-tertiary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section address a:hover,
+.footer-section address a:focus {
+    color: var(--accent-green);
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+    text-align: center;
+    color: var(--text-tertiary);
+    font-size: 0.9rem;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+/* Print Styles */
+@media print {
+    .header,
+    .nav-controls,
+    .back-to-top,
+    .carousel-btn,
+    .footer {
+        display: none !important;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    main {
+        max-width: 100%;
+    }
+
+    .section {
+        page-break-inside: avoid;
+        margin-bottom: 20px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        page-break-after: avoid;
+    }
+
+    a {
+        text-decoration: underline;
+        color: #0066cc;
+    }
+
+    .course-list {
+        page-break-inside: avoid;
+    }
+
+    .faculty-card {
+        page-break-inside: avoid;
+    }
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer {
+        padding: 40px 20px 20px;
+    }
+
+    .back-to-top {
+        width: 45px;
+        height: 45px;
+        right: 20px;
+        bottom: -100px;
+    }
+
+    .back-to-top.show {
+        bottom: 20px;
+    }
+
+    .theme-toggle {
+        margin-right: 0.5rem;
+        padding: 5px 8px;
     }
 }

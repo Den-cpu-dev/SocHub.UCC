@@ -14,8 +14,27 @@
 </head>
 
 <body>
+    <!-- Additional SEO meta tags -->
+    <meta name="theme-color" content="#1f3a0f">
+    <meta name="author" content="Department of Sociology & Anthropology, University of Cape Coast">
+    <meta property="og:title" content="Department of Sociology & Anthropology - UCC">
+    <meta property="og:description"
+        content="Explore our undergraduate and postgraduate programs, faculty, and resources.">
+    <meta property="og:type" content="website">
+    <!-- Structured data for search engines -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Department of Sociology & Anthropology",
+        "url": "https://sociology-anthropology.ucc.edu.gh",
+        "logo": "soasa-emblem.svg",
+        "description": "Department of Sociology & Anthropology at University of Cape Coast"
+    }
+    </script>
+
     <!-- Skip to main content link for accessibility -->
-    <a href="#home" class="skip-link">Skip to main content</a>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <!-- Navigation Header -->
     <header class="header">
         <nav class="navbar">
@@ -41,6 +60,24 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="nav-controls">
+                <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"
+                        style="display:none;">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
                 <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
                     <span></span>
                     <span></span>
@@ -51,728 +88,784 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-carousel">
-            <div class="carousel-container">
-                <div class="carousel-slide active">
-                    <img src="images/FyW5fslXgAAngE7.jpg" alt="University of Cape Coast 1" class="carousel-image"
-                        loading="eager">
-                </div>
-                <div class="carousel-slide">
-                    <img src="images/FyW5fslXwAMATcI.jpg" alt="University of Cape Coast 2" class="carousel-image"
-                        loading="lazy">
-                </div>
-                <div class="carousel-slide">
-                    <img src="images/FyW5fsnWIAEvd2L.jpg" alt="University of Cape Coast 3" class="carousel-image"
-                        loading="lazy">
-                </div>
-                <div class="carousel-slide">
-                    <img src="images/F1JoKPzWAAIkhpQ.jpg" alt="University of Cape Coast 4" class="carousel-image"
-                        loading="lazy">
-                </div>
-                <div class="carousel-slide">
-                    <img src="images/GQlZwLMXQAENa3I.jpg" alt="University of Cape Coast 5" class="carousel-image"
-                        loading="lazy">
-                </div>
-                <div class="carousel-slide">
-                    <img src="images/FLLD9e6WQAILl4G.jpg" alt="University of Cape Coast 6" class="carousel-image"
-                        loading="lazy">
-                </div>
-                <div class="carousel-slide">
-                    <img src="images/WhatsApp Image 2025-12-27 at 12.20.13 PM.jpeg" alt="University of Cape Coast 7"
-                        class="carousel-image" loading="lazy">
-                </div>
-            </div>
-            <div class="carousel-overlay"></div>
-        </div>
-        <button class="carousel-btn carousel-prev" aria-label="Previous slide">&lt;</button>
-        <button class="carousel-btn carousel-next" aria-label="Next slide">&gt;</button>
-        <div class="hero-content">
-            <div class="hero-emblem">
-                <img src="soasa-emblem.svg" alt="SOASA Emblem" class="hero-emblem-img">
-            </div>
-            <h1>Department of Sociology & Anthropology</h1>
-            <p>University of Cape Coast</p>
-            <p class="hero-description">
-                Exploring human societies, cultures, and social structures.
-                Advancing knowledge through research and innovative teaching.
-            </p>
-            <button class="cta-btn">Explore Programs</button>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <h2>About Our Department</h2>
-            <p>
-                The Department of Sociology and Anthropology is dedicated to understanding
-                human behavior, social institutions, and cultural diversity. Our programs
-                combine theoretical knowledge with practical research experience, preparing
-                students for careers in education, government, non-profits, and private sectors.
-            </p>
-            <p>
-                We are committed to fostering critical thinking, cultural sensitivity, and
-                research excellence among our students and faculty.
-            </p>
-        </div>
-    </section>
-
-    <!-- Programs Section -->
-    <section class="programs" id="programs">
-        <div class="container">
-            <h2>Undergraduate Programs</h2>
-            <p class="program-intro">Bachelor of Arts in Sociology and Anthropology</p>
-
-            <!-- Level 100 -->
-            <div class="level-section">
-                <h3 class="level-title">Level 100</h3>
-
-                <div class="semester-container">
-                    <div class="semester">
-                        <h4>First Semester</h4>
-                        <ul class="course-list">
-                            <li><span class="course-code">SOC 101</span> Introduction to Sociology I <span
-                                    class="core-badge">CORE</span></li>
-                            <li><span class="course-code">SOC 103</span> Introduction to Anthropology I <span
-                                    class="core-badge">CORE</span></li>
-                        </ul>
+    <main id="main-content">
+        <section class="hero" id="home">
+            <div class="hero-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-slide active">
+                        <img src="images/FyW5fslXgAAngE7.jpg" alt="University of Cape Coast 1" class="carousel-image"
+                            loading="eager">
                     </div>
-
-                    <div class="semester">
-                        <h4>Second Semester</h4>
-                        <ul class="course-list">
-                            <li><span class="course-code">SOC 102</span> Introduction to Psychology <span
-                                    class="core-badge">CORE</span></li>
-                            <li><span class="course-code">SOC 104</span> Introduction to Anthropology II <span
-                                    class="core-badge">CORE</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Level 200 -->
-            <div class="level-section">
-                <h3 class="level-title">Level 200</h3>
-
-                <div class="semester-container">
-                    <div class="semester">
-                        <h4>First Semester</h4>
-                        <ul class="course-list">
-                            <li><span class="course-code">SOC 201</span> Foundation and Issues in Sociology <span
-                                    class="core-badge">CORE</span></li>
-                            <li><span class="course-code">SOC 214</span> Social Psychology <span
-                                    class="core-badge">CORE</span></li>
-                        </ul>
-                    </div>
-
-                    <div class="semester">
-                        <h4>Second Semester</h4>
-                        <ul class="course-list">
-                            <li><span class="course-code">SOC 204</span> Social Structure of Ghana <span
-                                    class="core-badge">CORE</span></li>
-                            <li><span class="course-code">SOC 211</span> Social Statistics <span
-                                    class="core-badge">CORE</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Level 300 -->
-            <div class="level-section">
-                <h3 class="level-title">Level 300</h3>
-
-                <div class="semester-container">
-                    <div class="semester">
-                        <h4>First Semester</h4>
-                        <ul class="course-list">
-                            <li><span class="course-code">SOC 301</span> Sociological Theory I <span
-                                    class="core-badge">CORE</span></li>
-                        </ul>
-                        <h5 class="elective-title">Electives</h5>
-                        <ul class="course-list elective-list">
-                            <li><span class="course-code">SOC 315</span> Sociology of Ageing</li>
-                            <li><span class="course-code">SOC 317</span> Sociology of Sport</li>
-                            <li><span class="course-code">SOC 319</span> Family and Kinship</li>
-                            <li><span class="course-code">SOC 321</span> Race &amp; Ethnicity</li>
-                            <li><span class="course-code">SOC 323</span> Social Change in Africa</li>
-                            <li><span class="course-code">SOC 325</span> Society and Development</li>
-                            <li><span class="course-code">SOC 327</span> Complex Organizations</li>
-                            <li><span class="course-code">SOC 329</span> Gender Studies</li>
-                            <li><span class="course-code">SOC 331</span> Socialisation</li>
-                            <li><span class="course-code">SOC 304</span> Sociology of Rural Areas</li>
-                            <li><span class="course-code">SOC 309</span> Victimology</li>
-                            <li><span class="course-code">SOC 332</span> Sociology of Blue Economy</li>
-                            <li><span class="course-code">SOC 341</span> International Relations</li>
-                        </ul>
-                    </div>
-
-                    <div class="semester">
-                        <h4>Second Semester</h4>
-                        <ul class="course-list">
-                            <li><span class="course-code">SOC 311</span> Social Research Methods <span
-                                    class="core-badge">CORE</span></li>
-                        </ul>
-                        <h5 class="elective-title">Electives</h5>
-                        <ul class="course-list elective-list">
-                            <li><span class="course-code">SOC 310</span> Politics &amp; Government</li>
-                            <li><span class="course-code">SOC 312</span> Deviance &amp; Social Problems</li>
-                            <li><span class="course-code">SOC 313</span> Social Stratification</li>
-                            <li><span class="course-code">SOC 314</span> Social Movements</li>
-                            <li><span class="course-code">SOC 316</span> Sociology of Health</li>
-                            <li><span class="course-code">SOC 318</span> Work &amp; Occupations</li>
-                            <li><span class="course-code">SOC 320</span> Demography I</li>
-                            <li><span class="course-code">SOC 322</span> Feminist Theory</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Level 400 -->
-            <div class="level-section">
-                <h3 class="level-title">Level 400</h3>
-
-                <div class="semester-container">
-                    <div class="semester">
-                        <h4>First Semester</h4>
-                        <ul class="course-list">
-                            <li><span class="course-code">SOC 401</span> Sociological Theory II <span
-                                    class="core-badge">CORE</span></li>
-                        </ul>
-                        <h5 class="elective-title">Electives</h5>
-                        <ul class="course-list elective-list">
-                            <li><span class="course-code">SOC 403</span> Gender &amp; Sexuality</li>
-                            <li><span class="course-code">SOC 405</span> Demography II</li>
-                            <li><span class="course-code">SOC 406</span> Urban Sociology</li>
-                            <li><span class="course-code">SOC 407</span> Social Planning</li>
-                            <li><span class="course-code">SOC 421</span> Death &amp; Dying</li>
-                            <li><span class="course-code">SOC 422</span> Political Economy I</li>
-                            <li><span class="course-code">SOC 423</span> Sociology of Education</li>
-                            <li><span class="course-code">SOC 424</span> Media &amp; Communications</li>
-                            <li><span class="course-code">SOC 437</span> Criminology</li>
-                            <li><span class="course-code">SOC 441</span> Sociology of the Internet</li>
-                        </ul>
-                    </div>
-
-                    <div class="semester">
-                        <h4>Second Semester</h4>
-                        <ul class="course-list">
-                            <li><span class="course-code">SOC 499</span> Long Essay <span class="core-badge">CORE</span>
-                            </li>
-                        </ul>
-                        <h5 class="elective-title">Electives</h5>
-                        <ul class="course-list elective-list">
-                            <li><span class="course-code">SOC 412</span> Population &amp; Health</li>
-                            <li><span class="course-code">SOC 414</span> Organizational Behaviour</li>
-                            <li><span class="course-code">SOC 416</span> Women &amp; Development</li>
-                            <li><span class="course-code">SOC 418</span> Sociology of Religion</li>
-                            <li><span class="course-code">SOC 426</span> Tourism &amp; Recreation</li>
-                            <li><span class="course-code">SOC 427</span> Political Economy II</li>
-                            <li><span class="course-code">SOC 428</span> Law &amp; Criminal Justice</li>
-                            <li><span class="course-code">SOC 429</span> Conflict Resolution</li>
-                            <li><span class="course-code">SOC 430</span> Environmental Sociology</li>
-                            <li><span class="course-code">SOC 442</span> Migration</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Faculty Section -->
-    <section class="faculty" id="faculty">
-        <div class="container">
-            <h2>Meet Our Faculty</h2>
-            <p class="section-intro">
-                Our experienced faculty members are experts in their fields, dedicated to student success.
-            </p>
-            <div class="faculty-grid">
-                <div class="faculty-card">
-                    <div class="faculty-image">
-                        <img src="prof-georgina.jpg" alt="Prof. Georgina Yaa Oduro" class="faculty-photo"
+                    <div class="carousel-slide">
+                        <img src="images/FyW5fslXwAMATcI.jpg" alt="University of Cape Coast 2" class="carousel-image"
                             loading="lazy">
                     </div>
-                    <h3>Prof. Georgina Yaa Oduro</h3>
-                    <p class="faculty-title">Head of Department</p>
+                    <div class="carousel-slide">
+                        <img src="images/FyW5fsnWIAEvd2L.jpg" alt="University of Cape Coast 3" class="carousel-image"
+                            loading="lazy">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/F1JoKPzWAAIkhpQ.jpg" alt="University of Cape Coast 4" class="carousel-image"
+                            loading="lazy">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/GQlZwLMXQAENa3I.jpg" alt="University of Cape Coast 5" class="carousel-image"
+                            loading="lazy">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/FLLD9e6WQAILl4G.jpg" alt="University of Cape Coast 6" class="carousel-image"
+                            loading="lazy">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/WhatsApp Image 2025-12-27 at 12.20.13 PM.jpeg" alt="University of Cape Coast 7"
+                            class="carousel-image" loading="lazy">
+                    </div>
                 </div>
-                <div class="faculty-card">
-                    <div class="faculty-image"></div>
-                    <h3>Prof. John Windie Ansah</h3>
-                    <p class="faculty-title">Associate Professor</p>
+                <div class="carousel-overlay"></div>
+            </div>
+            <button class="carousel-btn carousel-prev" aria-label="Previous slide">&lt;</button>
+            <button class="carousel-btn carousel-next" aria-label="Next slide">&gt;</button>
+            <div class="hero-content">
+                <div class="hero-emblem">
+                    <img src="soasa-emblem.svg" alt="SOASA Emblem" class="hero-emblem-img">
                 </div>
-                <div class="faculty-card">
-                    <div class="faculty-image"></div>
-                    <h3>Dr. Razak Jaha Imoro</h3>
-                    <p class="faculty-title">Senior Lecturer</p>
+                <h1>Department of Sociology & Anthropology</h1>
+                <p>University of Cape Coast</p>
+                <p class="hero-description">
+                    Exploring human societies, cultures, and social structures.
+                    Advancing knowledge through research and innovative teaching.
+                </p>
+                <button class="cta-btn">Explore Programs</button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <h2>About Our Department</h2>
+                <p>
+                    The Department of Sociology and Anthropology is dedicated to understanding
+                    human behavior, social institutions, and cultural diversity. Our programs
+                    combine theoretical knowledge with practical research experience, preparing
+                    students for careers in education, government, non-profits, and private sectors.
+                </p>
+                <p>
+                    We are committed to fostering critical thinking, cultural sensitivity, and
+                    research excellence among our students and faculty.
+                </p>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section class="programs" id="programs">
+            <div class="container">
+                <h2>Undergraduate Programs</h2>
+                <p class="program-intro">Bachelor of Arts in Sociology and Anthropology</p>
+
+                <!-- Level 100 -->
+                <div class="level-section">
+                    <h3 class="level-title">Level 100</h3>
+
+                    <div class="semester-container">
+                        <div class="semester">
+                            <h4>First Semester</h4>
+                            <ul class="course-list">
+                                <li><span class="course-code">SOC 101</span> Introduction to Sociology I <span
+                                        class="core-badge">CORE</span></li>
+                                <li><span class="course-code">SOC 103</span> Introduction to Anthropology I <span
+                                        class="core-badge">CORE</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="semester">
+                            <h4>Second Semester</h4>
+                            <ul class="course-list">
+                                <li><span class="course-code">SOC 102</span> Introduction to Psychology <span
+                                        class="core-badge">CORE</span></li>
+                                <li><span class="course-code">SOC 104</span> Introduction to Anthropology II <span
+                                        class="core-badge">CORE</span></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="faculty-card">
-                    <div class="faculty-image"></div>
-                    <h3>Dr. Edgar Takyi Akonor</h3>
-                    <p class="faculty-title">Senior Lecturer</p>
+
+                <!-- Level 200 -->
+                <div class="level-section">
+                    <h3 class="level-title">Level 200</h3>
+
+                    <div class="semester-container">
+                        <div class="semester">
+                            <h4>First Semester</h4>
+                            <ul class="course-list">
+                                <li><span class="course-code">SOC 201</span> Foundation and Issues in Sociology <span
+                                        class="core-badge">CORE</span></li>
+                                <li><span class="course-code">SOC 214</span> Social Psychology <span
+                                        class="core-badge">CORE</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="semester">
+                            <h4>Second Semester</h4>
+                            <ul class="course-list">
+                                <li><span class="course-code">SOC 204</span> Social Structure of Ghana <span
+                                        class="core-badge">CORE</span></li>
+                                <li><span class="course-code">SOC 211</span> Social Statistics <span
+                                        class="core-badge">CORE</span></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="faculty-card">
-                    <div class="faculty-image"></div>
-                    <h3>Prof. Daniel Yaw Fiaveh</h3>
-                    <p class="faculty-title">Associate Professor</p>
+
+                <!-- Level 300 -->
+                <div class="level-section">
+                    <h3 class="level-title">Level 300</h3>
+
+                    <div class="semester-container">
+                        <div class="semester">
+                            <h4>First Semester</h4>
+                            <ul class="course-list">
+                                <li><span class="course-code">SOC 301</span> Sociological Theory I <span
+                                        class="core-badge">CORE</span></li>
+                            </ul>
+                            <h5 class="elective-title">Electives</h5>
+                            <ul class="course-list elective-list">
+                                <li><span class="course-code">SOC 315</span> Sociology of Ageing</li>
+                                <li><span class="course-code">SOC 317</span> Sociology of Sport</li>
+                                <li><span class="course-code">SOC 319</span> Family and Kinship</li>
+                                <li><span class="course-code">SOC 321</span> Race &amp; Ethnicity</li>
+                                <li><span class="course-code">SOC 323</span> Social Change in Africa</li>
+                                <li><span class="course-code">SOC 325</span> Society and Development</li>
+                                <li><span class="course-code">SOC 327</span> Complex Organizations</li>
+                                <li><span class="course-code">SOC 329</span> Gender Studies</li>
+                                <li><span class="course-code">SOC 331</span> Socialisation</li>
+                                <li><span class="course-code">SOC 304</span> Sociology of Rural Areas</li>
+                                <li><span class="course-code">SOC 309</span> Victimology</li>
+                                <li><span class="course-code">SOC 332</span> Sociology of Blue Economy</li>
+                                <li><span class="course-code">SOC 341</span> International Relations</li>
+                            </ul>
+                        </div>
+
+                        <div class="semester">
+                            <h4>Second Semester</h4>
+                            <ul class="course-list">
+                                <li><span class="course-code">SOC 311</span> Social Research Methods <span
+                                        class="core-badge">CORE</span></li>
+                            </ul>
+                            <h5 class="elective-title">Electives</h5>
+                            <ul class="course-list elective-list">
+                                <li><span class="course-code">SOC 310</span> Politics &amp; Government</li>
+                                <li><span class="course-code">SOC 312</span> Deviance &amp; Social Problems</li>
+                                <li><span class="course-code">SOC 313</span> Social Stratification</li>
+                                <li><span class="course-code">SOC 314</span> Social Movements</li>
+                                <li><span class="course-code">SOC 316</span> Sociology of Health</li>
+                                <li><span class="course-code">SOC 318</span> Work &amp; Occupations</li>
+                                <li><span class="course-code">SOC 320</span> Demography I</li>
+                                <li><span class="course-code">SOC 322</span> Feminist Theory</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="faculty-card">
-                    <div class="faculty-image"></div>
-                    <h3>Dr. Raymond Kwasi Boasinke</h3>
-                    <p class="faculty-title">Lecturer</p>
+
+                <!-- Level 400 -->
+                <div class="level-section">
+                    <h3 class="level-title">Level 400</h3>
+
+                    <div class="semester-container">
+                        <div class="semester">
+                            <h4>First Semester</h4>
+                            <ul class="course-list">
+                                <li><span class="course-code">SOC 401</span> Sociological Theory II <span
+                                        class="core-badge">CORE</span></li>
+                            </ul>
+                            <h5 class="elective-title">Electives</h5>
+                            <ul class="course-list elective-list">
+                                <li><span class="course-code">SOC 403</span> Gender &amp; Sexuality</li>
+                                <li><span class="course-code">SOC 405</span> Demography II</li>
+                                <li><span class="course-code">SOC 406</span> Urban Sociology</li>
+                                <li><span class="course-code">SOC 407</span> Social Planning</li>
+                                <li><span class="course-code">SOC 421</span> Death &amp; Dying</li>
+                                <li><span class="course-code">SOC 422</span> Political Economy I</li>
+                                <li><span class="course-code">SOC 423</span> Sociology of Education</li>
+                                <li><span class="course-code">SOC 424</span> Media &amp; Communications</li>
+                                <li><span class="course-code">SOC 437</span> Criminology</li>
+                                <li><span class="course-code">SOC 441</span> Sociology of the Internet</li>
+                            </ul>
+                        </div>
+
+                        <div class="semester">
+                            <h4>Second Semester</h4>
+                            <ul class="course-list">
+                                <li><span class="course-code">SOC 499</span> Long Essay <span
+                                        class="core-badge">CORE</span>
+                                </li>
+                            </ul>
+                            <h5 class="elective-title">Electives</h5>
+                            <ul class="course-list elective-list">
+                                <li><span class="course-code">SOC 412</span> Population &amp; Health</li>
+                                <li><span class="course-code">SOC 414</span> Organizational Behaviour</li>
+                                <li><span class="course-code">SOC 416</span> Women &amp; Development</li>
+                                <li><span class="course-code">SOC 418</span> Sociology of Religion</li>
+                                <li><span class="course-code">SOC 426</span> Tourism &amp; Recreation</li>
+                                <li><span class="course-code">SOC 427</span> Political Economy II</li>
+                                <li><span class="course-code">SOC 428</span> Law &amp; Criminal Justice</li>
+                                <li><span class="course-code">SOC 429</span> Conflict Resolution</li>
+                                <li><span class="course-code">SOC 430</span> Environmental Sociology</li>
+                                <li><span class="course-code">SOC 442</span> Migration</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="faculty-card">
-                    <div class="faculty-image"></div>
-                    <h3>Dr. Solomon Sika-Bright</h3>
-                    <p class="faculty-title">Senior Lecturer</p>
+            </div>
+        </section>
+
+        <!-- Faculty Section -->
+        <section class="faculty" id="faculty">
+            <div class="container">
+                <h2>Meet Our Faculty</h2>
+                <p class="section-intro">
+                    Our experienced faculty members are experts in their fields, dedicated to student success.
+                </p>
+                <div class="faculty-grid">
+                    <div class="faculty-card">
+                        <div class="faculty-image">
+                            <img src="prof-georgina.jpg" alt="Prof. Georgina Yaa Oduro" class="faculty-photo"
+                                loading="lazy">
+                        </div>
+                        <h3>Prof. Georgina Yaa Oduro</h3>
+                        <p class="faculty-title">Head of Department</p>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image"></div>
+                        <h3>Prof. John Windie Ansah</h3>
+                        <p class="faculty-title">Associate Professor</p>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image"></div>
+                        <h3>Dr. Razak Jaha Imoro</h3>
+                        <p class="faculty-title">Senior Lecturer</p>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image"></div>
+                        <h3>Dr. Edgar Takyi Akonor</h3>
+                        <p class="faculty-title">Senior Lecturer</p>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image"></div>
+                        <h3>Prof. Daniel Yaw Fiaveh</h3>
+                        <p class="faculty-title">Associate Professor</p>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image"></div>
+                        <h3>Dr. Raymond Kwasi Boasinke</h3>
+                        <p class="faculty-title">Lecturer</p>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image"></div>
+                        <h3>Dr. Solomon Sika-Bright</h3>
+                        <p class="faculty-title">Senior Lecturer</p>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image"></div>
+                        <h3>Dr. Micheal Sakyi-Darko</h3>
+                        <p class="faculty-title">Lecturer</p>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image"></div>
+                        <h3>Dr.Emmanuel Asante</h3>
+                        <p class="faculty-title">Lecturer</p>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image"></div>
+                        <h3>Dr. (Mrs.) Naa Adjeley Suta Alakija Sekyi</h3>
+                        <p class="faculty-title">Senior Lecturer</p>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image"></div>
+                        <h3>Prof. Nancy Lundgren</h3>
+                        <p class="faculty-title">Associate Professor</p>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image"></div>
+                        <h3>Dr. Brempong Osei-Tutu</h3>
+                        <p class="faculty-title">Senior Lecturer</p>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image"></div>
+                        <h3>Prof. Alex Somuah Obeng</h3>
+                        <p class="faculty-title">Associate Professor</p>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image"></div>
+                        <h3>Dr. Joseph Kingsley Adjei</h3>
+                        <p class="faculty-title">Senior Lecturer</p>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image"></div>
+                        <h3>Dr. Albert Annang</h3>
+                        <p class="faculty-title">Lecturer</p>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image"></div>
+                        <h3>Prof. (Mrs.) Henrietta Abane</h3>
+                        <p class="faculty-title">Associate Professor</p>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image"></div>
+                        <h3>Dr. Francis Aning Anokye</h3>
+                        <p class="faculty-title">Lecturer</p>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image"></div>
+                        <h3>Ms. Dilys Amoabeng</h3>
+                        <p class="faculty-title">Principal Research Assistant(Teaching Associate) | Senior Staff</p>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image"></div>
+                        <h3>Dr. Daniel Ampem Darko-Asumadu</h3>
+                        <p class="faculty-title">Lecturer</p>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image"></div>
+                        <h3>Dr. Dorothy Takyiakwaa</h3>
+                        <p class="faculty-title">Lecturer</p>
+                    </div>
                 </div>
-                <div class="faculty-card">
-                    <div class="faculty-image"></div>
-                    <h3>Dr. Micheal Sakyi-Darko</h3>
-                    <p class="faculty-title">Lecturer</p>
+            </div>
+        </section>
+
+        <!-- SOASA Executives Section -->
+        <section class="soasa" id="soasa">
+            <div class="container">
+                <h2>SOASA Executives</h2>
+                <p class="section-intro">
+                    Meet the dedicated students leading our Sociology and Anthropology Students Association.
+                </p>
+                <div class="soasa-grid">
+                    <div class="executive-card">
+                        <div class="executive-image"></div>
+                        <h3>Executive Name</h3>
+                        <p class="executive-position">President</p>
+                    </div>
+                    <div class="executive-card">
+                        <div class="executive-image"></div>
+                        <h3>Executive Name</h3>
+                        <p class="executive-position">Vice President</p>
+                    </div>
+                    <div class="executive-card">
+                        <div class="executive-image"></div>
+                        <h3>Executive Name</h3>
+                        <p class="executive-position">Secretary</p>
+                    </div>
+                    <div class="executive-card">
+                        <div class="executive-image"></div>
+                        <h3>Executive Name</h3>
+                        <p class="executive-position">Treasurer</p>
+                    </div>
+                    <div class="executive-card">
+                        <div class="executive-image"></div>
+                        <h3>Executive Name</h3>
+                        <p class="executive-position">Public Relations Officer</p>
+                    </div>
+                    <div class="executive-card">
+                        <div class="executive-image"></div>
+                        <h3>Executive Name</h3>
+                        <p class="executive-position">Events Coordinator</p>
+                    </div>
                 </div>
-                <div class="faculty-card">
-                    <div class="faculty-image"></div>
-                    <h3>Dr.Emmanuel Asante</h3>
-                    <p class="faculty-title">Lecturer</p>
+            </div>
+        </section>
+
+        <!-- Course Materials Section -->
+        <section class="materials" id="materials">
+            <div class="container">
+                <h2>Course Materials & Slides</h2>
+                <p class="section-intro">
+                    Download course slides and study materials from Google Drive.
+                </p>
+
+                <div class="materials-folders">
+                    <a href="https://drive.google.com/drive/folders/1d6msFGRltJM4OWT-oOjHGMN06VyOk_k4"
+                        class="folder-card" target="_blank" rel="noopener noreferrer">
+                        <div class="folder-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="flap" d="M10 4H4a2 2 0 0 0-2 2v2h20V8a2 2 0 0 0-2-2H11l-1-2z" />
+                                <path class="body" d="M2 8v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H2z" />
+                            </svg>
+                        </div>
+                        <h3>Level 100</h3>
+                        <p>First Year Courses</p>
+                    </a>
+
+                    <a href="https://drive.google.com/drive/folders/1-1ov-KwVSQh6lWQGbEeTCCIgEmjzVFJS"
+                        class="folder-card" target="_blank" rel="noopener noreferrer">
+                        <div class="folder-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="flap" d="M10 4H4a2 2 0 0 0-2 2v2h20V8a2 2 0 0 0-2-2H11l-1-2z" />
+                                <path class="body" d="M2 8v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H2z" />
+                            </svg>
+                        </div>
+                        <h3>Level 200</h3>
+                        <p>Second Year Courses</p>
+                    </a>
+
+                    <a href="https://drive.google.com/drive/folders/1-7EapbKEVyey2kOaOdK5_4qlRHF6SyP4"
+                        class="folder-card" target="_blank" rel="noopener noreferrer">
+                        <div class="folder-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="flap" d="M10 4H4a2 2 0 0 0-2 2v2h20V8a2 2 0 0 0-2-2H11l-1-2z" />
+                                <path class="body" d="M2 8v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H2z" />
+                            </svg>
+                        </div>
+                        <h3>Level 300</h3>
+                        <p>Third Year Courses</p>
+                    </a>
+
+                    <a href="https://drive.google.com/drive/folders/1-9Hqhr2SgoS7LmFEAsh-MHP3X-feWFhk"
+                        class="folder-card" target="_blank" rel="noopener noreferrer">
+                        <div class="folder-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="flap" d="M10 4H4a2 2 0 0 0-2 2v2h20V8a2 2 0 0 0-2-2H11l-1-2z" />
+                                <path class="body" d="M2 8v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H2z" />
+                            </svg>
+                        </div>
+                        <h3>Level 400</h3>
+                        <p>Fourth Year Courses</p>
+                    </a>
+
+                    <div class="folder-card" role="button" tabindex="0"
+                        aria-label="Level 400 &amp; Long Essay - Coming soon">
+                        <div class="folder-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="flap" d="M10 4H4a2 2 0 0 0-2 2v2h20V8a2 2 0 0 0-2-2H11l-1-2z" />
+                                <path class="body" d="M2 8v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H2z" />
+                            </svg>
+                        </div>
+                        <h3>Level 400 &amp; Long Essay</h3>
+                        <p>Final year long essay materials and guidance</p>
+                        <p class="coming-soon">Coming soon</p>
+                    </div>
+
+                    <div class="folder-card" role="button" tabindex="0" aria-label="Past Questions Bank - Coming soon">
+                        <div class="folder-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="flap" d="M10 4H4a2 2 0 0 0-2 2v2h20V8a2 2 0 0 0-2-2H11l-1-2z" />
+                                <path class="body" d="M2 8v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H2z" />
+                            </svg>
+                        </div>
+                        <h3>Past Questions Bank</h3>
+                        <p>Collection of past exam questions and answers</p>
+                        <p class="coming-soon">Coming soon</p>
+                    </div>
+
+                    <div class="folder-card" role="button" tabindex="0"
+                        aria-label="Research Methods &amp; SPSS - Coming soon">
+                        <div class="folder-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="flap" d="M10 4H4a2 2 0 0 0-2 2v2h20V8a2 2 0 0 0-2-2H11l-1-2z" />
+                                <path class="body" d="M2 8v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H2z" />
+                            </svg>
+                        </div>
+                        <h3>Research Methods &amp; SPSS</h3>
+                        <p>Methods notes, SPSS tutorials and sample datasets</p>
+                        <p class="coming-soon">Coming soon</p>
+                    </div>
                 </div>
-                <div class="faculty-card">
-                    <div class="faculty-image"></div>
-                    <h3>Dr. (Mrs.) Naa Adjeley Suta Alakija Sekyi</h3>
-                    <p class="faculty-title">Senior Lecturer</p>
+            </div>
+        </section>
+
+        <!-- Scholarships Section -->
+        <section class="scholarships" id="scholarships">
+            <div class="container">
+                <h2>Scholarship Opportunities</h2>
+                <p class="section-intro">
+                    Explore scholarship opportunities for international students, particularly for Ghanaian students
+                    pursuing higher education.
+                </p>
+
+                <div class="scholarships-grid">
+                    <button class="scholarship-carousel-btn scholarship-carousel-prev"
+                        aria-label="Previous scholarship">&#8249;</button>
+                    <button class="scholarship-carousel-btn scholarship-carousel-next"
+                        aria-label="Next scholarship">&#8250;</button>
+                    <a href="https://www.scholars4dev.com" class="scholarship-card" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="scholarship-icon">🎓</div>
+                        <h3>Scholarships for Development</h3>
+                        <p>Comprehensive database of scholarships for students from developing countries, including
+                            Ghana
+                        </p>
+                        <span class="scholarship-tag">International</span>
+                    </a>
+
+                    <a href="https://www.opportunitiesforafricans.com" class="scholarship-card" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="scholarship-icon">🌍</div>
+                        <h3>Opportunities for Africans</h3>
+                        <p>Scholarships, fellowships, and opportunities specifically for African students</p>
+                        <span class="scholarship-tag">Africa Focus</span>
+                    </a>
+
+                    <a href="https://www.chevening.org" class="scholarship-card" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="scholarship-icon">🇬🇧</div>
+                        <h3>Chevening Scholarships</h3>
+                        <p>UK government's global scholarship programme for future leaders, open to Ghanaians</p>
+                        <span class="scholarship-tag">UK</span>
+                    </a>
+
+                    <a href="https://www.fulbrightonline.org" class="scholarship-card" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="scholarship-icon">🇺🇸</div>
+                        <h3>Fulbright Program</h3>
+                        <p>US government-sponsored international exchange program for graduate students and
+                            professionals
+                        </p>
+                        <span class="scholarship-tag">USA</span>
+                    </a>
+
+                    <a href="https://www.studyinaustralia.gov.au/scholarships" class="scholarship-card" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="scholarship-icon">🇦🇺</div>
+                        <h3>Australia Awards</h3>
+                        <p>Australian government scholarships for students from Africa, including Ghana</p>
+                        <span class="scholarship-tag">Australia</span>
+                    </a>
+
+                    <a href="https://www.studyinnl.org/scholarships" class="scholarship-card" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="scholarship-icon">🇳🇱</div>
+                        <h3>Holland Scholarship</h3>
+                        <p>Dutch government scholarships for international students, including those from Ghana</p>
+                        <span class="scholarship-tag">Netherlands</span>
+                    </a>
+
+                    <a href="https://www.daad.de/en" class="scholarship-card" target="_blank" rel="noopener noreferrer">
+                        <div class="scholarship-icon">🇩🇪</div>
+                        <h3>DAAD Scholarships</h3>
+                        <p>German Academic Exchange Service offers scholarships for international students</p>
+                        <span class="scholarship-tag">Germany</span>
+                    </a>
+
+                    <a href="https://www.vanier.gc.ca" class="scholarship-card" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="scholarship-icon">🇨🇦</div>
+                        <h3>Vanier Canada Scholarships</h3>
+                        <p>Canadian government scholarships for doctoral students, open to international applicants</p>
+                        <span class="scholarship-tag">Canada</span>
+                    </a>
+
+                    <a href="https://www.britishcouncil.org/study-uk/scholarships" class="scholarship-card"
+                        target="_blank" rel="noopener noreferrer">
+                        <div class="scholarship-icon">🎓</div>
+                        <h3>British Council Scholarships</h3>
+                        <p>Various UK scholarships and funding opportunities for international students</p>
+                        <span class="scholarship-tag">UK</span>
+                    </a>
+
+                    <a href="https://www.masterstudies.com/scholarships" class="scholarship-card" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="scholarship-icon">📚</div>
+                        <h3>Masterstudies Scholarships</h3>
+                        <p>Database of scholarships for master's and doctoral programs worldwide</p>
+                        <span class="scholarship-tag">Global</span>
+                    </a>
+
+                    <a href="https://www.africanscholarships.com" class="scholarship-card" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="scholarship-icon">🌍</div>
+                        <h3>African Scholarships</h3>
+                        <p>Scholarship opportunities specifically curated for African students</p>
+                        <span class="scholarship-tag">Africa</span>
+                    </a>
+
+                    <a href="https://www.scholarshipair.com" class="scholarship-card" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="scholarship-icon">✈️</div>
+                        <h3>Scholarship Air</h3>
+                        <p>Comprehensive platform for finding scholarships for students from developing countries</p>
+                        <span class="scholarship-tag">International</span>
+                    </a>
                 </div>
-                <div class="faculty-card">
-                    <div class="faculty-image"></div>
-                    <h3>Prof. Nancy Lundgren</h3>
-                    <p class="faculty-title">Associate Professor</p>
+
+                <div class="scholarship-note">
+                    <p><strong>Note:</strong> Always verify scholarship details on the official websites. Application
+                        requirements, deadlines, and eligibility criteria may change. These links are provided for
+                        information purposes only.</p>
                 </div>
-                <div class="faculty-card">
-                    <div class="faculty-image"></div>
-                    <h3>Dr. Brempong Osei-Tutu</h3>
-                    <p class="faculty-title">Senior Lecturer</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p><strong>Email:</strong> sociology@ucc.edu.gh</p>
+                        <p><strong>Phone:</strong> +233 XXX XXX XXXX</p>
+                        <p><strong>Location:</strong> University of Cape Coast, Ghana</p>
+                    </div>
+                    <form class="contact-form">
+                        <label for="contact-name">Your Name</label>
+                        <input type="text" id="contact-name" name="name" placeholder="Your Name" required
+                            maxlength="100" pattern="[A-Za-z\s]{2,}"
+                            title="Name must be at least 2 characters and contain only letters">
+                        <label for="contact-email">Your Email</label>
+                        <input type="email" id="contact-email" name="email" placeholder="Your Email" required
+                            maxlength="254">
+                        <label for="contact-message">Your Message</label>
+                        <textarea id="contact-message" name="message" placeholder="Your Message" rows="5" required
+                            maxlength="1000"></textarea>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
                 </div>
-                <div class="faculty-card">
-                    <div class="faculty-image"></div>
-                    <h3>Prof. Alex Somuah Obeng</h3>
-                    <p class="faculty-title">Associate Professor</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 Department of Sociology & Anthropology, University of Cape Coast. All rights reserved.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                        aria-label="Visit our Facebook page">Facebook</a>
+                    <a href="https://x.com/SoasaUcc?s=20" target="_blank" rel="noopener noreferrer"
+                        aria-label="Visit SOASA UCC on X (Twitter)">Twitter</a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+                        aria-label="Visit our LinkedIn page">LinkedIn</a>
                 </div>
-                <div class="faculty-card">
-                    <div class="faculty-image"></div>
-                    <h3>Dr. Joseph Kingsley Adjei</h3>
-                    <p class="faculty-title">Senior Lecturer</p>
-                </div>
-                <div class="faculty-card">
-                    <div class="faculty-image"></div>
-                    <h3>Dr. Albert Annang</h3>
-                    <p class="faculty-title">Lecturer</p>
-                </div>
-                <div class="faculty-card">
-                    <div class="faculty-image"></div>
-                    <h3>Prof. (Mrs.) Henrietta Abane</h3>
-                    <p class="faculty-title">Associate Professor</p>
-                </div>
-                <div class="faculty-card">
-                    <div class="faculty-image"></div>
-                    <h3>Dr. Francis Aning Anokye</h3>
-                    <p class="faculty-title">Lecturer</p>
-                </div>
-                <div class="faculty-card">
-                    <div class="faculty-image"></div>
-                    <h3>Ms. Dilys Amoabeng</h3>
-                    <p class="faculty-title">Principal Research Assistant(Teaching Associate) | Senior Staff</p>
-                </div>
-                <div class="faculty-card">
-                    <div class="faculty-image"></div>
-                    <h3>Dr. Daniel Ampem Darko-Asumadu</h3>
-                    <p class="faculty-title">Lecturer</p>
-                </div>
-                <div class="faculty-card">
-                    <div class="faculty-image"></div>
-                    <h3>Dr. Dorothy Takyiakwaa</h3>
-                    <p class="faculty-title">Lecturer</p>
+            </div>
+        </footer>
+
+        <!-- Course Modal -->
+        <div id="courseModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalCourseCode"
+            aria-describedby="modalCourseName">
+            <div class="modal-content">
+                <button class="close" aria-label="Close modal">&times;</button>
+                <h2 id="modalCourseCode"></h2>
+                <h3 id="modalCourseName"></h3>
+                <div class="modal-details">
+                    <div class="detail-item">
+                        <h4>Description</h4>
+                        <p id="modalDescription"></p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Credit Hours</h4>
+                        <p id="modalCredits"></p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Lecturer</h4>
+                        <p id="modalLecturer"></p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Critical Analysis</h4>
+                        <p id="modalAnalysis"></p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Career Paths</h4>
+                        <p id="modalCareers"></p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Resources &amp; Links</h4>
+                        <p id="modalLinks"></p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- SOASA Executives Section -->
-    <section class="soasa" id="soasa">
-        <div class="container">
-            <h2>SOASA Executives</h2>
-            <p class="section-intro">
-                Meet the dedicated students leading our Sociology and Anthropology Students Association.
-            </p>
-            <div class="soasa-grid">
-                <div class="executive-card">
-                    <div class="executive-image"></div>
-                    <h3>Executive Name</h3>
-                    <p class="executive-position">President</p>
+        <!-- Faculty Modal -->
+        <div id="facultyModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalFacultyName">
+            <div class="modal-content">
+                <button class="close" aria-label="Close modal">&times;</button>
+                <div class="faculty-modal-header">
+                    <img id="modalFacultyPhoto" src="" alt="Faculty Photo" class="faculty-modal-photo">
+                    <div class="faculty-modal-info">
+                        <h2 id="modalFacultyName"></h2>
+                        <h3 id="modalFacultyPosition"></h3>
+                    </div>
                 </div>
-                <div class="executive-card">
-                    <div class="executive-image"></div>
-                    <h3>Executive Name</h3>
-                    <p class="executive-position">Vice President</p>
-                </div>
-                <div class="executive-card">
-                    <div class="executive-image"></div>
-                    <h3>Executive Name</h3>
-                    <p class="executive-position">Secretary</p>
-                </div>
-                <div class="executive-card">
-                    <div class="executive-image"></div>
-                    <h3>Executive Name</h3>
-                    <p class="executive-position">Treasurer</p>
-                </div>
-                <div class="executive-card">
-                    <div class="executive-image"></div>
-                    <h3>Executive Name</h3>
-                    <p class="executive-position">Public Relations Officer</p>
-                </div>
-                <div class="executive-card">
-                    <div class="executive-image"></div>
-                    <h3>Executive Name</h3>
-                    <p class="executive-position">Events Coordinator</p>
+                <div class="modal-details">
+                    <div class="detail-item">
+                        <h4>Email</h4>
+                        <p id="modalFacultyEmail"></p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Biography</h4>
+                        <p id="modalFacultyBio"></p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Specializations</h4>
+                        <p id="modalSpecializations"></p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Research Interests</h4>
+                        <p id="modalInterests"></p>
+                    </div>
+                    <div class="detail-item">
+                        <a id="modalProfileLink" href="#" target="_blank" rel="noopener noreferrer"
+                            class="profile-link">View Full UCC Profile →</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </main>
 
-    <!-- Course Materials Section -->
-    <section class="materials" id="materials">
-        <div class="container">
-            <h2>Course Materials & Slides</h2>
-            <p class="section-intro">
-                Download course slides and study materials from Google Drive.
-            </p>
-
-            <div class="materials-folders">
-                <a href="https://drive.google.com/drive/folders/1d6msFGRltJM4OWT-oOjHGMN06VyOk_k4" class="folder-card"
-                    target="_blank" rel="noopener noreferrer">
-                    <div class="folder-icon">
-                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path class="flap" d="M10 4H4a2 2 0 0 0-2 2v2h20V8a2 2 0 0 0-2-2H11l-1-2z" />
-                            <path class="body" d="M2 8v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H2z" />
-                        </svg>
-                    </div>
-                    <h3>Level 100</h3>
-                    <p>First Year Courses</p>
-                </a>
-
-                <a href="https://drive.google.com/drive/folders/1-1ov-KwVSQh6lWQGbEeTCCIgEmjzVFJS" class="folder-card"
-                    target="_blank" rel="noopener noreferrer">
-                    <div class="folder-icon">
-                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path class="flap" d="M10 4H4a2 2 0 0 0-2 2v2h20V8a2 2 0 0 0-2-2H11l-1-2z" />
-                            <path class="body" d="M2 8v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H2z" />
-                        </svg>
-                    </div>
-                    <h3>Level 200</h3>
-                    <p>Second Year Courses</p>
-                </a>
-
-                <a href="https://drive.google.com/drive/folders/1-7EapbKEVyey2kOaOdK5_4qlRHF6SyP4" class="folder-card"
-                    target="_blank" rel="noopener noreferrer">
-                    <div class="folder-icon">
-                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path class="flap" d="M10 4H4a2 2 0 0 0-2 2v2h20V8a2 2 0 0 0-2-2H11l-1-2z" />
-                            <path class="body" d="M2 8v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H2z" />
-                        </svg>
-                    </div>
-                    <h3>Level 300</h3>
-                    <p>Third Year Courses</p>
-                </a>
-
-                <a href="https://drive.google.com/drive/folders/1-9Hqhr2SgoS7LmFEAsh-MHP3X-feWFhk" class="folder-card"
-                    target="_blank" rel="noopener noreferrer">
-                    <div class="folder-icon">
-                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path class="flap" d="M10 4H4a2 2 0 0 0-2 2v2h20V8a2 2 0 0 0-2-2H11l-1-2z" />
-                            <path class="body" d="M2 8v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H2z" />
-                        </svg>
-                    </div>
-                    <h3>Level 400</h3>
-                    <p>Fourth Year Courses</p>
-                </a>
-
-                <div class="folder-card" role="button" tabindex="0"
-                    aria-label="Level 400 &amp; Long Essay - Coming soon">
-                    <div class="folder-icon">
-                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path class="flap" d="M10 4H4a2 2 0 0 0-2 2v2h20V8a2 2 0 0 0-2-2H11l-1-2z" />
-                            <path class="body" d="M2 8v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H2z" />
-                        </svg>
-                    </div>
-                    <h3>Level 400 &amp; Long Essay</h3>
-                    <p>Final year long essay materials and guidance</p>
-                    <p class="coming-soon">Coming soon</p>
-                </div>
-
-                <div class="folder-card" role="button" tabindex="0" aria-label="Past Questions Bank - Coming soon">
-                    <div class="folder-icon">
-                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path class="flap" d="M10 4H4a2 2 0 0 0-2 2v2h20V8a2 2 0 0 0-2-2H11l-1-2z" />
-                            <path class="body" d="M2 8v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H2z" />
-                        </svg>
-                    </div>
-                    <h3>Past Questions Bank</h3>
-                    <p>Collection of past exam questions and answers</p>
-                    <p class="coming-soon">Coming soon</p>
-                </div>
-
-                <div class="folder-card" role="button" tabindex="0"
-                    aria-label="Research Methods &amp; SPSS - Coming soon">
-                    <div class="folder-icon">
-                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path class="flap" d="M10 4H4a2 2 0 0 0-2 2v2h20V8a2 2 0 0 0-2-2H11l-1-2z" />
-                            <path class="body" d="M2 8v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H2z" />
-                        </svg>
-                    </div>
-                    <h3>Research Methods &amp; SPSS</h3>
-                    <p>Methods notes, SPSS tutorials and sample datasets</p>
-                    <p class="coming-soon">Coming soon</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Scholarships Section -->
-    <section class="scholarships" id="scholarships">
-        <div class="container">
-            <h2>Scholarship Opportunities</h2>
-            <p class="section-intro">
-                Explore scholarship opportunities for international students, particularly for Ghanaian students
-                pursuing higher education.
-            </p>
-
-            <div class="scholarships-grid">
-                <button class="scholarship-carousel-btn scholarship-carousel-prev"
-                    aria-label="Previous scholarship">&#8249;</button>
-                <button class="scholarship-carousel-btn scholarship-carousel-next"
-                    aria-label="Next scholarship">&#8250;</button>
-                <a href="https://www.scholars4dev.com" class="scholarship-card" target="_blank"
-                    rel="noopener noreferrer">
-                    <div class="scholarship-icon">🎓</div>
-                    <h3>Scholarships for Development</h3>
-                    <p>Comprehensive database of scholarships for students from developing countries, including Ghana
-                    </p>
-                    <span class="scholarship-tag">International</span>
-                </a>
-
-                <a href="https://www.opportunitiesforafricans.com" class="scholarship-card" target="_blank"
-                    rel="noopener noreferrer">
-                    <div class="scholarship-icon">🌍</div>
-                    <h3>Opportunities for Africans</h3>
-                    <p>Scholarships, fellowships, and opportunities specifically for African students</p>
-                    <span class="scholarship-tag">Africa Focus</span>
-                </a>
-
-                <a href="https://www.chevening.org" class="scholarship-card" target="_blank" rel="noopener noreferrer">
-                    <div class="scholarship-icon">🇬🇧</div>
-                    <h3>Chevening Scholarships</h3>
-                    <p>UK government's global scholarship programme for future leaders, open to Ghanaians</p>
-                    <span class="scholarship-tag">UK</span>
-                </a>
-
-                <a href="https://www.fulbrightonline.org" class="scholarship-card" target="_blank"
-                    rel="noopener noreferrer">
-                    <div class="scholarship-icon">🇺🇸</div>
-                    <h3>Fulbright Program</h3>
-                    <p>US government-sponsored international exchange program for graduate students and professionals
-                    </p>
-                    <span class="scholarship-tag">USA</span>
-                </a>
-
-                <a href="https://www.studyinaustralia.gov.au/scholarships" class="scholarship-card" target="_blank"
-                    rel="noopener noreferrer">
-                    <div class="scholarship-icon">🇦🇺</div>
-                    <h3>Australia Awards</h3>
-                    <p>Australian government scholarships for students from Africa, including Ghana</p>
-                    <span class="scholarship-tag">Australia</span>
-                </a>
-
-                <a href="https://www.studyinnl.org/scholarships" class="scholarship-card" target="_blank"
-                    rel="noopener noreferrer">
-                    <div class="scholarship-icon">🇳🇱</div>
-                    <h3>Holland Scholarship</h3>
-                    <p>Dutch government scholarships for international students, including those from Ghana</p>
-                    <span class="scholarship-tag">Netherlands</span>
-                </a>
-
-                <a href="https://www.daad.de/en" class="scholarship-card" target="_blank" rel="noopener noreferrer">
-                    <div class="scholarship-icon">🇩🇪</div>
-                    <h3>DAAD Scholarships</h3>
-                    <p>German Academic Exchange Service offers scholarships for international students</p>
-                    <span class="scholarship-tag">Germany</span>
-                </a>
-
-                <a href="https://www.vanier.gc.ca" class="scholarship-card" target="_blank" rel="noopener noreferrer">
-                    <div class="scholarship-icon">🇨🇦</div>
-                    <h3>Vanier Canada Scholarships</h3>
-                    <p>Canadian government scholarships for doctoral students, open to international applicants</p>
-                    <span class="scholarship-tag">Canada</span>
-                </a>
-
-                <a href="https://www.britishcouncil.org/study-uk/scholarships" class="scholarship-card" target="_blank"
-                    rel="noopener noreferrer">
-                    <div class="scholarship-icon">🎓</div>
-                    <h3>British Council Scholarships</h3>
-                    <p>Various UK scholarships and funding opportunities for international students</p>
-                    <span class="scholarship-tag">UK</span>
-                </a>
-
-                <a href="https://www.masterstudies.com/scholarships" class="scholarship-card" target="_blank"
-                    rel="noopener noreferrer">
-                    <div class="scholarship-icon">📚</div>
-                    <h3>Masterstudies Scholarships</h3>
-                    <p>Database of scholarships for master's and doctoral programs worldwide</p>
-                    <span class="scholarship-tag">Global</span>
-                </a>
-
-                <a href="https://www.africanscholarships.com" class="scholarship-card" target="_blank"
-                    rel="noopener noreferrer">
-                    <div class="scholarship-icon">🌍</div>
-                    <h3>African Scholarships</h3>
-                    <p>Scholarship opportunities specifically curated for African students</p>
-                    <span class="scholarship-tag">Africa</span>
-                </a>
-
-                <a href="https://www.scholarshipair.com" class="scholarship-card" target="_blank"
-                    rel="noopener noreferrer">
-                    <div class="scholarship-icon">✈️</div>
-                    <h3>Scholarship Air</h3>
-                    <p>Comprehensive platform for finding scholarships for students from developing countries</p>
-                    <span class="scholarship-tag">International</span>
-                </a>
-            </div>
-
-            <div class="scholarship-note">
-                <p><strong>Note:</strong> Always verify scholarship details on the official websites. Application
-                    requirements, deadlines, and eligibility criteria may change. These links are provided for
-                    information purposes only.</p>
-            </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <p><strong>Email:</strong> sociology@ucc.edu.gh</p>
-                    <p><strong>Phone:</strong> +233 XXX XXX XXXX</p>
-                    <p><strong>Location:</strong> University of Cape Coast, Ghana</p>
-                </div>
-                <form class="contact-form">
-                    <label for="contact-name">Your Name</label>
-                    <input type="text" id="contact-name" name="name" placeholder="Your Name" required maxlength="100"
-                        pattern="[A-Za-z\s]{2,}" title="Name must be at least 2 characters and contain only letters">
-                    <label for="contact-email">Your Email</label>
-                    <input type="email" id="contact-email" name="email" placeholder="Your Email" required
-                        maxlength="254">
-                    <label for="contact-message">Your Message</label>
-                    <textarea id="contact-message" name="message" placeholder="Your Message" rows="5" required
-                        maxlength="1000"></textarea>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top" title="Back to top">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2025 Department of Sociology & Anthropology, University of Cape Coast. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
-                    aria-label="Visit our Facebook page">Facebook</a>
-                <a href="https://x.com/SoasaUcc?s=20" target="_blank" rel="noopener noreferrer"
-                    aria-label="Visit SOASA UCC on X (Twitter)">Twitter</a>
-                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
-                    aria-label="Visit our LinkedIn page">LinkedIn</a>
+            <div class="footer-section">
+                <h3>About the Department</h3>
+                <p>The Department of Sociology & Anthropology at the University of Cape Coast is dedicated to advancing
+                    knowledge through research and innovative teaching in human societies and cultures.</p>
             </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#faculty">Faculty</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Programs</h3>
+                <ul class="footer-links">
+                    <li><a href="#programs">Undergraduate</a></li>
+                    <li><a href="postgraduate.html">Postgraduate</a></li>
+                    <li><a href="sandwich.html">Sandwich Program</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <address>
+                    <p><strong>Department of Sociology & Anthropology</strong></p>
+                    <p>University of Cape Coast<br>
+                        Cape Coast, Ghana</p>
+                    <p>Email: <a href="mailto:sociology@ucc.edu.gh">sociology@ucc.edu.gh</a></p>
+                    <p>Phone: <a href="tel:+233333032835">+233 333 032835</a></p>
+                </address>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Department of Sociology & Anthropology, University of Cape Coast. All rights reserved.</p>
+            <p>Designed with accessibility and user experience in mind.</p>
         </div>
     </footer>
-
-    <!-- Course Modal -->
-    <div id="courseModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalCourseCode"
-        aria-describedby="modalCourseName">
-        <div class="modal-content">
-            <button class="close" aria-label="Close modal">&times;</button>
-            <h2 id="modalCourseCode"></h2>
-            <h3 id="modalCourseName"></h3>
-            <div class="modal-details">
-                <div class="detail-item">
-                    <h4>Description</h4>
-                    <p id="modalDescription"></p>
-                </div>
-                <div class="detail-item">
-                    <h4>Credit Hours</h4>
-                    <p id="modalCredits"></p>
-                </div>
-                <div class="detail-item">
-                    <h4>Lecturer</h4>
-                    <p id="modalLecturer"></p>
-                </div>
-                <div class="detail-item">
-                    <h4>Critical Analysis</h4>
-                    <p id="modalAnalysis"></p>
-                </div>
-                <div class="detail-item">
-                    <h4>Career Paths</h4>
-                    <p id="modalCareers"></p>
-                </div>
-                <div class="detail-item">
-                    <h4>Resources &amp; Links</h4>
-                    <p id="modalLinks"></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Faculty Modal -->
-    <div id="facultyModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalFacultyName">
-        <div class="modal-content">
-            <button class="close" aria-label="Close modal">&times;</button>
-            <div class="faculty-modal-header">
-                <img id="modalFacultyPhoto" src="" alt="Faculty Photo" class="faculty-modal-photo">
-                <div class="faculty-modal-info">
-                    <h2 id="modalFacultyName"></h2>
-                    <h3 id="modalFacultyPosition"></h3>
-                </div>
-            </div>
-            <div class="modal-details">
-                <div class="detail-item">
-                    <h4>Email</h4>
-                    <p id="modalFacultyEmail"></p>
-                </div>
-                <div class="detail-item">
-                    <h4>Biography</h4>
-                    <p id="modalFacultyBio"></p>
-                </div>
-                <div class="detail-item">
-                    <h4>Specializations</h4>
-                    <p id="modalSpecializations"></p>
-                </div>
-                <div class="detail-item">
-                    <h4>Research Interests</h4>
-                    <p id="modalInterests"></p>
-                </div>
-                <div class="detail-item">
-                    <a id="modalProfileLink" href="#" target="_blank" rel="noopener noreferrer"
-                        class="profile-link">View Full UCC Profile →</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-</body>
 
 </html>
