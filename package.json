@@ -1,0 +1,29 @@
+{
+  "name": "SocHub.UCC",
+  "version": "1.0.0",
+  "description": "Department of Sociology & Anthropology - University of Cape Coast official website",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "format": "prettier --write .",
+    "lint": "eslint *.js"
+  },
+  "keywords": [
+    "sociology",
+    "anthropology",
+    "university",
+    "cape-coast",
+    "education"
+  ],
+  "author": "Den-cpu-dev",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Den-cpu-dev/SocHub.UCC.git"
+  },
+  "homepage": "https://den-cpu-dev.github.io/SocHub.UCC/",
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "eslint": "^8.0.0"
+  }
+}
