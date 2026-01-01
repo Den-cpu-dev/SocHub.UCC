@@ -42,7 +42,7 @@ This website provides comprehensive information about:
 
 This site is deployed on GitHub Pages with automatic HTTPS encryption.
 
-Visit: [Your Site URL will be here]
+Visit: [https://den-cpu-dev.github.io/SocHub.UCC/](https://den-cpu-dev.github.io/SocHub.UCC/)
 
 ## Structure
 
