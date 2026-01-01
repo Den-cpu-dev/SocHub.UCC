@@ -1,0 +1,94 @@
+# Copilot Configuration Instructions
+
+## Project Overview
+- **Project**: Department of Sociology & Anthropology Website (SocHub.UCC)
+- **Tech Stack**: HTML5, CSS3, JavaScript (ES6+)
+- **Deployment**: GitHub Pages
+- **URL**: https://den-cpu-dev.github.io/SocHub.UCC/
+
+## Key Files
+- `index.html` - Main landing page with hero carousel
+- `postgraduate.html` - Postgraduate programs page
+- `sandwich.html` - Sandwich program page
+- `styles.css` - Global styling with CSS variables
+- `script.js` - Interactive features and carousels
+- `soasa-emblem.svg` - Department emblem
+
+## Development Guidelines
+
+### Code Standards
+- Use semantic HTML5 elements
+- Maintain consistent indentation (4 spaces)
+- Follow CSS variable naming conventions
+- Use ES6+ features (arrow functions, const/let)
+- Implement accessibility features (ARIA labels, skip links, keyboard navigation)
+
+### Accessibility Requirements
+- All interactive elements must be keyboard accessible
+- Include skip navigation links
+- Use semantic HTML (nav, header, section, main, footer)
+- Add ARIA labels to buttons and icons
+- Ensure color contrast meets WCAG AA standards
+- Test with screen readers
+
+### Performance Considerations
+- Lazy load images (loading="lazy")
+- Use event debouncing for resize listeners
+- Minify CSS and JavaScript
+- Optimize images (WebP format when possible)
+- Passive event listeners for scroll/touch
+
+### Security
+- Content Security Policy headers configured
+- No inline script execution
+- Sanitize user inputs
+- Use rel="noopener noreferrer" for external links
+- Never commit sensitive data
+
+## Common Tasks
+
+### Adding New Pages
+1. Create HTML file with semantic structure
+2. Include header with navigation
+3. Add carousel if needed (use existing hero-carousel pattern)
+4. Maintain consistent styling via styles.css
+5. Test responsive design at breakpoints: 768px, 1024px
+
+### Modifying Carousels
+- Carousel buttons: `.carousel-btn` with z-index: 5
+- Keep buttons OUTSIDE carousel-container (not inside)
+- Use simple arrow symbols (< >) or proper Unicode arrows
+- Test both desktop and mobile
+
+### Updating Styles
+- Use CSS variables for colors (--primary-green, --accent-green, etc.)
+- Maintain responsive breakpoints (480px, 768px, 1024px, 1400px)
+- Always include focus states for accessibility
+- Test dark mode compatibility
+
+### JavaScript Functions
+- Wrap functions in IIFE to avoid global scope pollution
+- Use event delegation for dynamic content
+- Include keyboard navigation (Arrow keys, Enter, Escape)
+- Add both click and touch support for mobile
+
+## Deployment
+- Automatic deployment to GitHub Pages on push to main
+- Check `.github/workflows` for deployment config
+- Site goes live at https://den-cpu-dev.github.io/SocHub.UCC/
+
+## Contact Form
+- Form submission currently simulated (uses setTimeout)
+- Ready for backend integration at /api/contact endpoint
+- Remove setTimeout once backend is ready
+
+## Known Issues to Address
+1. Form submission backend integration needed
+2. Test coverage (Jest + Cypress recommended)
+3. Phone number placeholder needs real department number
+4. Consider build tooling (Vite/Parcel) for production
+
+## Resources
+- [WCAG 2.1 Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
+- [MDN Web Docs](https://developer.mozilla.org/)
+- [GitHub Pages Docs](https://docs.github.com/en/pages)
