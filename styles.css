@@ -318,7 +318,7 @@ a:focus-visible {
     height: 50px;
     border-radius: 50%;
     cursor: pointer;
-    z-index: 4;
+    z-index: 5;
     display: flex;
     align-items: center;
     justify-content: center;
