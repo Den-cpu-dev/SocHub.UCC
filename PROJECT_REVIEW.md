@@ -108,9 +108,9 @@ html.dark-mode {
 - ⚠️ Missing null checks in some functions
 - ⚠️ No input validation or sanitization
 - ⚠️ Carousel functionality not implemented (static)
-- ⚠️ Unused variables: `careerData`, `facultyData` (defined but never used)
-- ⚠️ ESLint errors: Missing curly braces after if statements (2 instances)
-- ⚠️ ESLint error: Inconsistent quote style (1 instance uses single quotes)
+- ⚠️ Unused variables: `careerData`, `facultyData` (defined at lines 83, 93 but never referenced in code - likely planned for future features)
+- ⚠️ ESLint errors: Missing curly braces after if statements (2 instances at lines 114, 161)
+- ⚠️ ESLint error: Inconsistent quote style at line 191 (uses single quotes instead of double)
 
 **Code Sample:**
 ```javascript
