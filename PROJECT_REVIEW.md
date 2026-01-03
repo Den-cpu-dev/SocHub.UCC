@@ -313,21 +313,22 @@ const courseCode = codeSpan ? codeSpan.textContent.trim() : null;
 ## Priority Recommendations
 
 ### High Priority (Must Fix) 🔴
-1. **Add .gitignore file** to exclude unnecessary files
+1. ✅ **Add .gitignore file** to exclude unnecessary files (COMPLETED)
 2. **Remove 'unsafe-inline' from CSP** and use nonces/hashes
 3. **Implement input sanitization** for contact form
 4. **Add error handling** for DOM queries and API calls
 5. **Create missing LICENSE file** (as mentioned in README)
 6. **Fix carousel auto-rotation** functionality
+7. **Add HTTPS enforcement** with HSTS headers
 
 ### Medium Priority (Should Fix) 🟡
-7. Add package.json for dependency management
-8. Implement build process for production optimization
-9. Add comprehensive code comments
-10. Create CONTRIBUTING.md and CODE_OF_CONDUCT.md
-11. Add automated testing (Jest, Cypress)
-12. Implement image optimization
-13. Add form validation and error messages
+8. Add package.json for dependency management
+9. Implement build process for production optimization
+10. Add comprehensive code comments
+11. Create CONTRIBUTING.md and CODE_OF_CONDUCT.md
+12. Add automated testing (Jest, Cypress)
+13. Implement image optimization
+14. Add form validation and error messages
 14. Complete faculty modal functionality
 
 ### Low Priority (Nice to Have) 🟢
