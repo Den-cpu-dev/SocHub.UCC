@@ -103,11 +103,14 @@ html.dark-mode {
 - ✅ Clean modal implementation
 - ✅ ESLint configuration present
 
-**Issues Found:**
+**Issues Found (Verified by ESLint):**
 - ⚠️ No error handling for DOM queries
 - ⚠️ Missing null checks in some functions
 - ⚠️ No input validation or sanitization
 - ⚠️ Carousel functionality not implemented (static)
+- ⚠️ Unused variables: `careerData`, `facultyData` (defined but never used)
+- ⚠️ ESLint errors: Missing curly braces after if statements (2 instances)
+- ⚠️ ESLint error: Inconsistent quote style (1 instance uses single quotes)
 
 **Code Sample:**
 ```javascript
