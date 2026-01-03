@@ -348,6 +348,167 @@ const courseData = {
         credits: "3",
         lecturer: "TBA",
     },
+    "ANT 101": {
+        name: "Introduction to Anthropology",
+        description:
+            "Foundational survey of anthropology's four fields, culture concept, and comparative approaches to human societies.",
+        credits: "3",
+        lecturer: "TBA",
+    },
+    "ANT 102": {
+        name: "Human Origins and Diversity",
+        description:
+            "Overview of human evolution, biological variation, and cultural diversity from prehistory to the present.",
+        credits: "3",
+        lecturer: "TBA",
+    },
+    "ANT 201": {
+        name: "Archaeology of Complex Societies",
+        description:
+            "Examines archaeological evidence for the rise of complex societies, states, and civilizations across regions.",
+        credits: "3",
+        lecturer: "TBA",
+    },
+    "ANT 202": {
+        name: "Classical Theories in Anthropology",
+        description:
+            "Reviews foundational anthropological theories and scholars, from evolutionism to functionalism and structuralism.",
+        credits: "3",
+        lecturer: "TBA",
+    },
+    "ANT 203": {
+        name: "Children in Cross-Cultural Perspective",
+        description:
+            "Explores childhood, socialization, and life-course expectations across diverse cultures and societies.",
+        credits: "3",
+        lecturer: "TBA",
+    },
+    "ANT 204": {
+        name: "Traditional African Societies",
+        description:
+            "Ethnographic survey of African social structures, belief systems, economies, and cultural change.",
+        credits: "3",
+        lecturer: "TBA",
+    },
+    "ANT 205": {
+        name: "Comparative Marriage Systems",
+        description:
+            "Comparative analysis of marriage, family, and kinship systems across cultures, including rites and obligations.",
+        credits: "3",
+        lecturer: "TBA",
+    },
+    "ANT 301": {
+        name: "Contemporary Theories in Anthropology",
+        description:
+            "Covers late 20th and 21st century anthropological theories, including practice theory, postcolonialism, and interpretivism.",
+        credits: "3",
+        lecturer: "TBA",
+    },
+    "ANT 302": {
+        name: "Writing Skills in Anthropology",
+        description:
+            "Develops ethnographic and analytical writing skills for anthropological research and publication.",
+        credits: "3",
+        lecturer: "TBA",
+    },
+    "ANT 303": {
+        name: "Research Methods in Anthropology",
+        description:
+            "Introduces qualitative and mixed-method approaches including participant observation, interviewing, and ethics.",
+        credits: "3",
+        lecturer: "TBA",
+    },
+    "ANT 304": {
+        name: "Anthropological Field Methods",
+        description:
+            "Practical field techniques for data collection, community entry, note-taking, and reflexivity in anthropology.",
+        credits: "3",
+        lecturer: "TBA",
+    },
+    "ANT 307": {
+        name: "Family and Kinship",
+        description:
+            "Anthropological perspectives on kinship systems, descent, residence rules, and household organization.",
+        credits: "3",
+        lecturer: "TBA",
+    },
+    "ANT 309": {
+        name: "Medical Anthropology",
+        description:
+            "Examines health, illness, healing systems, and biocultural factors shaping wellbeing across societies.",
+        credits: "3",
+        lecturer: "TBA",
+    },
+    "ANT 312": {
+        name: "Women in Cross-Cultural Perspective",
+        description:
+            "Comparative study of women's roles, statuses, and agency across cultures and historical contexts.",
+        credits: "3",
+        lecturer: "TBA",
+    },
+    "ANT 313": {
+        name: "Introduction to Gender Studies",
+        description:
+            "Introduces gender theories and cultural constructions of gender identities in anthropological context.",
+        credits: "3",
+        lecturer: "TBA",
+    },
+    "ANT 401": {
+        name: "Introduction to Gender Theories",
+        description:
+            "Advanced survey of gender theories and their application to anthropological research and analysis.",
+        credits: "3",
+        lecturer: "TBA",
+    },
+    "ANT 403": {
+        name: "Anthropology of Tourism",
+        description:
+            "Analyzes tourism as a cultural and economic practice, host-guest dynamics, and heritage commodification.",
+        credits: "3",
+        lecturer: "TBA",
+    },
+    "ANT 405": {
+        name: "Witchcraft, Magic and Religion",
+        description:
+            "Explores belief systems, ritual practices, and cosmologies, with emphasis on power and social control.",
+        credits: "3",
+        lecturer: "TBA",
+    },
+    "ANT 407": {
+        name: "Globalization and the Culture of Capitalism",
+        description:
+            "Investigates cultural dimensions of globalization, capitalism, consumption, and transnational flows.",
+        credits: "3",
+        lecturer: "TBA",
+    },
+    "ANT 408": {
+        name: "Media, Communication and Popular Culture",
+        description:
+            "Studies media systems, popular culture production/consumption, and their sociocultural impacts globally.",
+        credits: "3",
+        lecturer: "TBA",
+    },
+    "ANT 411": {
+        name: "Peoples and Cultures of the African Diaspora",
+        description:
+            "Surveys histories, identities, and cultural expressions of African diaspora communities worldwide.",
+        credits: "3",
+        lecturer: "TBA",
+    },
+    "ANT 414": {
+        name: "Sex and Culture",
+        description:
+            "Examines sexuality, reproduction, and gendered norms across cultures with anthropological frameworks.",
+        credits: "3",
+        lecturer: "TBA",
+    },
+    "ANT 499": {
+        name: "Long Essay",
+        description:
+            "Independent research project demonstrating competency in anthropological inquiry and writing.",
+        credits: "6",
+        lecturer: "Supervisor",
+    },
 };
 
 const careerData = {
@@ -829,6 +990,143 @@ const careerData = {
             { text: "IOM", url: "https://www.iom.int" },
             { text: "UNHCR", url: "https://www.unhcr.org" },
         ],
+    },
+    "ANT 101": {
+        analysis:
+            "Builds foundational anthropological thinking and cultural literacy; pairs well with field methods later on.",
+        careers: "Cultural liaison, heritage assistant, research intern",
+        links: [{ text: "UNESCO", url: "https://www.unesco.org" }],
+    },
+    "ANT 102": {
+        analysis:
+            "Introduces human evolution and diversity; strengthens preparation for archaeology and biological anthropology electives.",
+        careers: "Museum assistant, heritage documentation, outreach educator",
+        links: [{ text: "Smithsonian Human Origins", url: "https://humanorigins.si.edu" }],
+    },
+    "ANT 201": {
+        analysis:
+            "Applies archaeological perspectives to state formation; relevant for heritage management and cultural resource roles.",
+        careers: "Heritage officer, archaeological field assistant, museum researcher",
+        links: [{ text: "ICOMOS", url: "https://www.icomos.org" }],
+    },
+    "ANT 202": {
+        analysis:
+            "Grounds students in classical anthropological theory; valuable for comparative analysis and graduate prep.",
+        careers: "Research assistant, policy analyst (culture), academic pathway",
+        links: [{ text: "AAA", url: "https://www.americananthro.org" }],
+    },
+    "ANT 203": {
+        analysis:
+            "Focuses on childhood across cultures; aligns with education, child protection and NGO roles.",
+        careers: "Child protection officer, education programme aide, community development",
+        links: [{ text: "UNICEF", url: "https://www.unicef.org" }],
+    },
+    "ANT 204": {
+        analysis:
+            "Deepens understanding of African societies and change; useful for development and cultural programming.",
+        careers: "Development officer, cultural programme coordinator, researcher",
+        links: [{ text: "African Studies Association", url: "https://africanstudies.org" }],
+    },
+    "ANT 205": {
+        analysis:
+            "Compares marriage and kinship systems; relevant to social policy, mediation and community services.",
+        careers: "Social policy aide, family services officer, community mediator",
+        links: [{ text: "UN Women", url: "https://www.unwomen.org" }],
+    },
+    "ANT 301": {
+        analysis:
+            "Contemporary theories sharpen critical analysis; strong base for policy and research careers.",
+        careers: "Policy analyst, cultural research associate, academic pathway",
+        links: [{ text: "JSTOR", url: "https://www.jstor.org" }],
+    },
+    "ANT 302": {
+        analysis:
+            "Strengthens academic and public-facing writing; boosts employability in research communication roles.",
+        careers: "Research writer, communications officer, grant writer",
+        links: [{ text: "Writing in the Disciplines", url: "https://wac.colostate.edu" }],
+    },
+    "ANT 303": {
+        analysis:
+            "Core research design and ethics; critical for any applied anthropology or NGO research role.",
+        careers: "Field researcher, M&E assistant, qualitative analyst",
+        links: [{ text: "SRA", url: "https://the-sra.org.uk" }],
+    },
+    "ANT 304": {
+        analysis:
+            "Hands-on field methods; enables employability in field projects and community-based research.",
+        careers: "Field officer, research assistant, community liaison",
+        links: [{ text: "IFAN Dakar", url: "https://ifan.ucad.sn" }],
+    },
+    "ANT 307": {
+        analysis:
+            "Kinship analysis supports social policy, welfare programming and cultural mediation work.",
+        careers: "Social welfare aide, cultural mediator, researcher",
+        links: [{ text: "UNICEF", url: "https://www.unicef.org" }],
+    },
+    "ANT 309": {
+        analysis:
+            "Medical anthropology links culture and health; strong fit for public health and community health roles.",
+        careers: "Community health officer, NGO health programmes, research assistant",
+        links: [{ text: "WHO", url: "https://www.who.int" }],
+    },
+    "ANT 312": {
+        analysis:
+            "Examines women’s lives across cultures; applicable to gender programming and advocacy.",
+        careers: "Gender officer, advocacy assistant, programme officer",
+        links: [{ text: "UN Women", url: "https://www.unwomen.org" }],
+    },
+    "ANT 313": {
+        analysis:
+            "Introduces gender studies frameworks; complements roles in inclusion and social policy.",
+        careers: "Diversity & inclusion assistant, policy aide, NGO programmes",
+        links: [{ text: "AWID", url: "https://www.awid.org" }],
+    },
+    "ANT 401": {
+        analysis: "Advanced gender theory; prepares for research, advocacy, and policy analysis.",
+        careers: "Gender analyst, research fellow, policy advisor",
+        links: [{ text: "UN Women", url: "https://www.unwomen.org" }],
+    },
+    "ANT 403": {
+        analysis:
+            "Applies anthropology to tourism; useful for heritage tourism, destination planning, and community benefits work.",
+        careers: "Tourism development officer, heritage interpreter, community tourism liaison",
+        links: [{ text: "UNWTO", url: "https://www.unwto.org" }],
+    },
+    "ANT 405": {
+        analysis:
+            "Explores belief systems and ritual; valuable for cultural programming, mediation, and heritage roles.",
+        careers: "Cultural programme officer, heritage educator, mediator",
+        links: [{ text: "Smithsonian Folklife", url: "https://folklife.si.edu" }],
+    },
+    "ANT 407": {
+        analysis:
+            "Links globalization to cultural change; relevant for CSR, development, and market research roles.",
+        careers: "CSR analyst, development officer, market/cultural researcher",
+        links: [{ text: "UNDP", url: "https://www.undp.org" }],
+    },
+    "ANT 408": {
+        analysis:
+            "Media and popular culture analysis; aligns with communications, media research, and cultural industries roles.",
+        careers: "Media researcher, communications officer, cultural content analyst",
+        links: [{ text: "Reuters Institute", url: "https://reutersinstitute.politics.ox.ac.uk" }],
+    },
+    "ANT 411": {
+        analysis:
+            "Diaspora studies; useful for cultural diplomacy, migration programming, and heritage projects.",
+        careers: "Cultural diplomacy aide, migration programme officer, heritage researcher",
+        links: [{ text: "IOM", url: "https://www.iom.int" }],
+    },
+    "ANT 414": {
+        analysis:
+            "Examines sexuality cross-culturally; relevant to health, rights, and education programmes.",
+        careers: "Health education officer, rights advocate, programme facilitator",
+        links: [{ text: "IPPF", url: "https://www.ippf.org" }],
+    },
+    "ANT 499": {
+        analysis:
+            "Capstone research project demonstrating independent inquiry; showcase for postgraduate or professional applications.",
+        careers: "Research assistant, junior consultant, graduate studies",
+        links: [{ text: "UCC Graduate School", url: "https://sgs.ucc.edu.gh" }],
     },
 };
 
